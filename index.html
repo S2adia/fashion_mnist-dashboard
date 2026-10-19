@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fashion-MNIST Embedding Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Fashion-MNIST: layer-by-layer embeddings</h1>
+    <label>Model
+      <select id="model">
+        <option value="cnn">CNN</option>
+        <option value="mlp">MLP</option>
+        <option value="transformer">Transformer</option>
+      </select>
+    </label>
+    <span id="status"></span>
+  </header>
+  <main id="app"></main>
+  <script src="script.js"></script>
+</body>
+</html>

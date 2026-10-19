@@ -1,0 +1,41 @@
+{
+  "model": "mlp",
+  "classes": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "stages": [
+    {
+      "id": 0,
+      "title": "Original Data \u2014 784 Pixels",
+      "dimensions": 784
+    },
+    {
+      "id": 1,
+      "title": "Hidden Layer 1 \u2014 1024 Features",
+      "dimensions": 256
+    },
+    {
+      "id": 2,
+      "title": "Hidden Layer 2 \u2014 256 Features",
+      "dimensions": 256
+    },
+    {
+      "id": 3,
+      "title": "Hidden Layer 3 \u2014 128 Features",
+      "dimensions": 128
+    }
+  ],
+  "axis_limit": {
+    "tsne": 121.77,
+    "umap": 24.18
+  }
+}

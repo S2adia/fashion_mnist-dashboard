@@ -1,0 +1,41 @@
+{
+  "model": "transformer",
+  "classes": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "stages": [
+    {
+      "id": 0,
+      "title": "Original Data \u2014 784 Pixels",
+      "dimensions": 784
+    },
+    {
+      "id": 1,
+      "title": "Encoder Block 1 \u2014 49 CLS Features",
+      "dimensions": 49
+    },
+    {
+      "id": 2,
+      "title": "Encoder Block 2 \u2014 49 CLS Features",
+      "dimensions": 49
+    },
+    {
+      "id": 3,
+      "title": "Encoder Block 3 \u2014 49 CLS Features",
+      "dimensions": 49
+    }
+  ],
+  "axis_limit": {
+    "tsne": 121.84,
+    "umap": 22.64
+  }
+}
