@@ -17,9 +17,21 @@
         <option value="transformer">Transformer</option>
       </select>
     </label>
+    <button id="showErr" class="toggle" aria-pressed="false">Show misclassified</button>
     <span id="status"></span>
   </header>
   <main id="app"></main>
+  <details id="matrixBox" open>
+    <summary>Confusion matrix (test set)</summary>
+    <div id="matrix">
+      <svg id="matrixSvg"></svg>
+      <div class="info">
+        <p>Rows are the actual class, columns the predicted class. Diagonal cells (grey) are correct predictions. Red shade shows what share of the actual class went to that wrong label.</p>
+        <p id="pairInfo"></p>
+      </div>
+    </div>
+  </details>
+
   <script src="script.js"></script>
 </body>
 </html>

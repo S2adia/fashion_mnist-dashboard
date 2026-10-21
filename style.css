@@ -35,3 +35,27 @@ header select { font: inherit; padding: 4px 8px; margin-left: 6px; }
 @media (max-width: 1100px) { .controls { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 800px)  { .row { grid-template-columns: repeat(2, 1fr); } }
 
+
+/* hover card for misclassified points */
+.tip { position: absolute; display: none; gap: 10px; align-items: center; z-index: 10; pointer-events: none;
+  background: #fff; border: 1px solid #999; padding: 8px 10px; font-size: 12.5px; line-height: 1.5; }
+.tip canvas { width: 84px; height: 84px; image-rendering: pixelated; background: #000; }
+.tip span { color: var(--muted); }
+
+/* misclassified toggle + class counts */
+.toggle { font: inherit; font-size: 14px; padding: 4px 12px; background: #fff; color: var(--fg); border: 1px solid #999; border-radius: 4px; cursor: pointer; }
+.toggle.on { background: #222; color: #fff; border-color: #222; }
+.controls .n { font-size: 12.5px; color: var(--muted); }
+
+/* confusion matrix */
+#matrixBox { margin-top: 14px; }
+#matrixBox summary { font-size: 15px; cursor: pointer; }
+#matrix { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; margin-top: 8px; }
+#matrixSvg { width: 470px; max-width: 100%; height: auto; }
+#matrixSvg text { font-family: inherit; }
+#matrix .info { max-width: 340px; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
+#matrix .info #pairInfo { color: var(--fg); }
+
+#matrixBox { margin-top: 36px; padding-top: 16px; border-top: 1px solid #ddd; }
+#matrixSvg { width: 560px; }
+.controls .n { font-size: 11.5px; }
