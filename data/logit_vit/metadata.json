@@ -1,0 +1,41 @@
+{
+  "model": "logit_vit",
+  "classes": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "stages": [
+    {
+      "id": 0,
+      "title": "Original Data \u2014 784 Pixels",
+      "dimensions": 784
+    },
+    {
+      "id": 1,
+      "title": "Encoder Block 1 \u2014 10 CLS Features",
+      "dimensions": 10
+    },
+    {
+      "id": 2,
+      "title": "Encoder Block 2 \u2014 10 CLS Features",
+      "dimensions": 10
+    },
+    {
+      "id": 3,
+      "title": "Encoder Block 3 \u2014 10 CLS Features",
+      "dimensions": 10
+    }
+  ],
+  "axis_limit": {
+    "tsne": 118.69,
+    "umap": 26.4
+  }
+}
