@@ -32,6 +32,11 @@
       "id": 3,
       "title": "Encoder Block 3 \u2014 49 CLS Features",
       "dimensions": 49
+    },
+    {
+      "id": 4,
+      "title": "Final Layer \u2014 10 Logits",
+      "dimensions": 10
     }
   ],
   "axis_limit": {
